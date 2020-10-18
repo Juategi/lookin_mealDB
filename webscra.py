@@ -36,7 +36,8 @@ def scrap_web(address):
   results = results1 + results2 + results3
 
   for result in results:
-    link = result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("href")
+    if "McDonald" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "Burguer King" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title"):
+      continue
     result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").send_keys(Keys.CONTROL + Keys.RETURN)
     sleep(1)
     driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
@@ -47,6 +48,8 @@ def scrap_web(address):
       name = driver.find_element_by_css_selector("h1[class='infoTextBlock-item-title']").text
     except:
       continue
+    print(name)
+    link = driver.current_url
     address = driver.find_element_by_css_selector("p[class='restInfoAddress']").text
     types = driver.find_element_by_css_selector("p[class='infoTextBlock-item-text']").text.split(",")
     image = driver.find_element_by_tag_name("picture").find_element_by_css_selector("img[class='c-pageBanner-img']").get_attribute("src")
@@ -87,12 +90,10 @@ def scrap_web(address):
         if len(name) <= len(tripad[i]['name']):
           for word in name.split():
             if word in tripad[i]['name'].split():
-              print(name)
               tid = tripad[i]['id']
         else:
           for word in tripad[i]['name'].split():
             if word in name.split():
-              print(name)
               tid = tripad[i]['id']   
     data = {}
     data["url"] = link

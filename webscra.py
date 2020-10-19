@@ -16,7 +16,6 @@ from geopy.geocoders import GoogleV3
 
 def scrap_web(address):
   print("Buscando ", address)
-  tripad = json.load(open('valencia_tripad.json', encoding='utf-8'))
   
   driver = webdriver.Firefox(executable_path=r'C:\D\lookin_mealDB\geckodriver.exe') 
   driver.get("https://www.just-eat.es/")
@@ -135,6 +134,18 @@ def scrap_web(address):
               user_agent='lookinmeal'
           )
     location = geolocator.geocode(address)
+    data = {}
+    data["url"] = link
+    data["menu"] = menu
+    data["name"] = name
+    data["types"] = types
+    data["image"] = image
+    data["address"] = address
+    data["latitude"] = location.latitude
+    data["longitude"] = location.longitude
+
+    """
+    tripad = json.load(open('valencia_tripad.json', encoding='utf-8'))
     tid = ""
     for i,val in enumerate(tripad):
       if "latitude" in tripad[i] and format(float(tripad[i]['latitude']), '.3f') == format(location.latitude, '.3f') and format(float(tripad[i]['longitude']), '.3f') == format(location.longitude, '.3f'):
@@ -146,9 +157,7 @@ def scrap_web(address):
           for word in tripad[i]['name'].split():
             if word in name.split():
               tid = tripad[i]['id']   
-    data = {}
-    data["url"] = link
-    data["menu"] = menu
+    
     if tid == "":
       data["name"] = name
       data["types"] = types
@@ -158,12 +167,13 @@ def scrap_web(address):
       data["longitude"] = location.longitude
     else:
       data["id"] = tid
+    """
     final[i] = data
     i += 1
     driver.close()
     driver.switch_to.window(driver.window_handles[0]) 
 
-  with open('valencia.json', 'w') as fp:
+  with open('valencia_je.json', 'w') as fp:
     json.dump(final, fp) 
   driver.close()
 

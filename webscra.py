@@ -83,10 +83,26 @@ def scrap_web(address):
               entry["image"] = ""
             aux = element.find_element_by_class_name("c-menuItems-content").text.split('\n')
             entry["name"] = aux[0]
-            entry["description"] = aux[1]
-            entry["price"] = re.findall("\d+\,\d+", aux[2])[0]
+            if len(aux) == 4:
+              entry["description"] = aux[1]
+              price = re.findall("\d+\,\d+", aux[3])
+              if price == []:
+                price = re.findall("\d+\.\d+", aux[3])
+            if len(aux) < 3:
+              entry["description"] = ""
+              price = re.findall("\d+\,\d+", aux[1])
+              if price == []:
+                price = re.findall("\d+\.\d+", aux[1])
+            else:
+              entry["description"] = aux[1]
+              price = re.findall("\d+\,\d+", aux[2])
+              if price == []:
+                price = re.findall("\d+\.\d+", aux[2])
+            if price == []
+              entry["price"] = 0.0
+            else:
+              entry["price"] = price[0]
             menu[section.find_element_by_tag_name("header").find_element_by_tag_name("button").text].append(entry)
-            print(entry)
 
     else:
       name = driver.find_element_by_css_selector("h1[class='infoTextBlock-item-title']").text

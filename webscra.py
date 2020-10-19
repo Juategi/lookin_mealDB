@@ -11,6 +11,7 @@ from pathlib import Path
 import json
 import sys,os
 import time 
+import re
 from geopy.geocoders import GoogleV3
 
 def scrap_web(address):
@@ -23,7 +24,8 @@ def scrap_web(address):
   i = 0
   errors = {}
   #WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "Form_c-search-input_3ySg3 Form_is-notEmpty_WFw9O")))
-  WebDriverWait(driver, 5)
+  #WebDriverWait(driver, 5)
+  sleep(3)
   input_name = driver.find_element_by_css_selector("input[type='text']")
   input_name.send_keys(address)
   time.sleep(2)
@@ -36,49 +38,85 @@ def scrap_web(address):
   results = results1 + results2 + results3
 
   for result in results:
-    if "McDonald" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "Burguer King" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title"):
+    dif = False
+    try:
+      if "McDonald" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "KFC" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "Burger King" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "Taco Bell" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title"):
+        dif = True
+      else:
+        continue
+    except:
+      print("error")
+      driver.close()
+      driver.switch_to.window(driver.window_handles[0]) 
       continue
-    result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").send_keys(Keys.CONTROL + Keys.RETURN)
+    try:
+      result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").send_keys(Keys.CONTROL + Keys.RETURN)
+    except:
+      print("error")
     sleep(1)
     driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
     driver.switch_to.window(driver.window_handles[1])
     
-    sleep(3)
-    try:
-      name = driver.find_element_by_css_selector("h1[class='infoTextBlock-item-title']").text
-    except:
-      continue
-    print(name)
+    if dif:
+      WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "c-menuItems-category-header")))
+    else:
+      try:
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "product-title")))
+      except:
+        print("error")
     link = driver.current_url
-    address = driver.find_element_by_css_selector("p[class='restInfoAddress']").text
-    types = driver.find_element_by_css_selector("p[class='infoTextBlock-item-text']").text.split(",")
     image = driver.find_element_by_tag_name("picture").find_element_by_css_selector("img[class='c-pageBanner-img']").get_attribute("src")
-    sections = driver.find_element_by_css_selector("div[class='menuCard-wrapper']").find_elements_by_tag_name("section")
-
     menu = {}
-    for section in sections :
-      menu[section.get_attribute("data-test-id")] = []
-      for element in section.find_element_by_css_selector("div[class='accordion-content']").find_elements_by_tag_name("div") : #coge todos los div
-        entry = {}
-        aux = element.text.split("\n")
-        if len(aux) < 2:
-          continue
-        entry["name"] = aux[0]
-        if len(aux) == 4:
-          entry["price"] = aux[2][:-2]
-          entry["description"] = aux[1]
-        else:
-          entry["price"] = aux[1][:-2]
-          entry["description"] = ""
-        #entry["name"] = element.find_element_by_tag_name("h4").text
-        #entry["price"] = element.find_element_by_css_selector("div[class='product-price u-noWrap']").text[:-2]
-        #try:
-          #entry["description"] = element.find_element_by_css_selector("div[class='product-description']").text
-        #except:
-          #entry["description"] = ""
-        menu[section.get_attribute("data-test-id")].append(entry)
-    #print(menu)
+    if dif:
+      name = driver.find_element_by_css_selector("h1[class='c-mediaElement-heading u-text-center']").text
+      address = driver.find_element_by_css_selector("span[class='c-restaurant-header-address-content']").text
+      types = driver.find_element_by_css_selector("span[class='c-badge c-badge--light c-badge--large']").text.split(",")
+      sections = driver.find_element_by_css_selector("div[data-test-id='menu-tab']").find_elements_by_tag_name("section")
+      for section in sections:
+        menu[section.find_element_by_tag_name("header").find_element_by_tag_name("button").text] = []
+        for i,element in enumerate(section.find_elements_by_tag_name("button")) :
+          if i != 0:
+            entry = {}
+            try:
+              entry["image"] = element.find_element_by_class_name("c-menuItems-imageContainer").find_element_by_tag_name("img").get_attribute("src")
+            except:
+              entry["image"] = ""
+            aux = element.find_element_by_class_name("c-menuItems-content").text.split('\n')
+            entry["name"] = aux[0]
+            entry["description"] = aux[1]
+            entry["price"] = re.findall("\d+\,\d+", aux[2])[0]
+            menu[section.find_element_by_tag_name("header").find_element_by_tag_name("button").text].append(entry)
+            print(entry)
 
+    else:
+      name = driver.find_element_by_css_selector("h1[class='infoTextBlock-item-title']").text
+      address = driver.find_element_by_css_selector("p[class='restInfoAddress']").text
+      types = driver.find_element_by_css_selector("p[class='infoTextBlock-item-text']").text.split(",")
+      try:
+        sections = driver.find_element_by_css_selector("div[class='menuCard-wrapper']").find_elements_by_tag_name("section")
+      except:
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0]) 
+        continue
+      for section  in sections :
+        menu[section.get_attribute("data-test-id")] = []
+        for element in section.find_element_by_css_selector("div[class='accordion-content']").find_elements_by_tag_name("div") : #coge todos los div
+          entry = {}
+          aux = element.text.split("\n")
+          if len(aux) < 2:
+            continue
+          entry["name"] = aux[0]
+          if len(aux) == 4:
+            entry["price"] = aux[2][:-2]
+            entry["description"] = aux[1]
+          else:
+            entry["price"] = aux[1][:-2]
+            entry["description"] = ""
+          entry["image"] = ""
+          menu[section.get_attribute("data-test-id")].append(entry)
+
+    print(menu)
+    print(name)
     geolocator = GoogleV3(
               api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',
               user_agent='lookinmeal'

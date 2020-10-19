@@ -42,8 +42,6 @@ def scrap_web(address):
     try:
       if "McDonald" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "KFC" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "Burger King" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "Taco Bell" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title"):
         dif = True
-      else:
-        continue
     except:
       print("error")
       driver.close()
@@ -98,7 +96,7 @@ def scrap_web(address):
               price = re.findall("\d+\,\d+", aux[2])
               if price == []:
                 price = re.findall("\d+\.\d+", aux[2])
-            if price == []
+            if price == []:
               entry["price"] = 0.0
             else:
               entry["price"] = price[0]
@@ -131,7 +129,6 @@ def scrap_web(address):
           entry["image"] = ""
           menu[section.get_attribute("data-test-id")].append(entry)
 
-    print(menu)
     print(name)
     geolocator = GoogleV3(
               api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',

@@ -4532,3 +4532,18 @@ JavaScript error: https://maps.googleapis.com/maps/api/js?callback=__google_maps
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1603132915115	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileT3MY4P"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603132916498	Marionette	INFO	Listening on port 59377
+1603132916621	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.just-eat.es/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=362192013, line 1: unreachable code after return statement
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: https://maps.googleapis.com/maps/api/js?callback=__google_maps_api_provider_initializator__&libraries=geometry,places&client=gme-justeat&v=3.39, line 103: Error: Could not load "usage".
+1603132978010	Marionette	INFO	Stopped listening on port 59377
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

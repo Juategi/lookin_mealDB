@@ -14,7 +14,7 @@ import time
 import re
 from geopy.geocoders import GoogleV3
 
-def scrap_web(address):
+def scrap_just_eat(address):
   print("Buscando ", address)
   
   driver = webdriver.Firefox(executable_path=r'C:\D\lookin_mealDB\geckodriver.exe') 
@@ -35,6 +35,7 @@ def scrap_web(address):
   results2 = driver.find_element_by_css_selector("div[data-test-id='searchresults']").find_element_by_css_selector("div[class='c-listing c-listing--subsequent ']").find_element_by_class_name("c-listing-loader").find_elements_by_tag_name("section")
   results3 = driver.find_element_by_css_selector("div[data-test-id='searchresults']").find_element_by_css_selector("div[class='c-listing c-listing--inactive ']").find_element_by_class_name("c-listing-loader").find_elements_by_tag_name("section")
   results = results1 + results2 + results3
+  print(len(results)," restaurantes")
 
   for result in results:
     dif = False
@@ -49,7 +50,7 @@ def scrap_web(address):
     try:
       result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").send_keys(Keys.CONTROL + Keys.RETURN)
     except:
-      print("error")
+      print("")
     sleep(1)
     driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
     driver.switch_to.window(driver.window_handles[1])
@@ -62,7 +63,12 @@ def scrap_web(address):
       except:
         print("error")
     link = driver.current_url
-    image = driver.find_element_by_tag_name("picture").find_element_by_css_selector("img[class='c-pageBanner-img']").get_attribute("src")
+    try:
+      image = driver.find_element_by_tag_name("picture").find_element_by_css_selector("img[class='c-pageBanner-img']").get_attribute("src")
+    except:
+      driver.close()
+      driver.switch_to.window(driver.window_handles[0]) 
+      continue
     menu = {}
     if dif:
       name = driver.find_element_by_css_selector("h1[class='c-mediaElement-heading u-text-center']").text
@@ -173,11 +179,66 @@ def scrap_web(address):
     driver.close()
     driver.switch_to.window(driver.window_handles[0]) 
 
-  with open('valencia_je.json', 'w') as fp:
+  with open('valencia_je2.json', 'w') as fp:
     json.dump(final, fp) 
   driver.close()
 
 
+def scrap_uber_eats(address):
+  print("Buscando ", address)
+  driver = webdriver.Firefox(executable_path=r'C:\D\lookin_mealDB\geckodriver.exe') 
+  driver.get("https://www.ubereats.com/")
+  final = {}
+  i = 0
+  errors = {}
+  #WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "fz kz g1 g2 g3 g4")))
+  #WebDriverWait(driver, 5)
+  sleep(3)
+  input_name = driver.find_element_by_css_selector("input[id='location-typeahead-home-input']")
+  input_name.send_keys(address)
+  time.sleep(2)
+  #button = driver.find_element_by_css_selector("button[class='cb c2 c3 cc cd ce bh ca c3 cf b6 aq az c6 b4 cb cg ch ci cj ck cl']")
+  firstLoc = driver.find_element_by_css_selector("li[id='location-typeahead-home-item-0']")
+  firstLoc.click()
+  sleep(9)
+  try:
+    nextButton = driver.find_element_by_css_selector("button[class*='ce bh ca c3 cf er aq']")
+  except:
+    nextButton = None
+  if nextButton != None:
+    """
+    while nextButton != None :
+      nextButton.click()
+      sleep(9)
+      try:
+        nextButton = driver.find_element_by_css_selector("button[class*='ce bh ca c3 cf er aq']")
+      except:
+        nextButton = None
+    """
+    results = driver.find_elements_by_css_selector("div[class*='g1 g2 g3 g4']")[1].find_elements_by_xpath("//*[contains(@class, 'g5')]")
+    print(len(results))
+    result = results[0]
+    #result.find_element_by_tag_name("figure").send_keys(Keys.CONTROL + Keys.RETURN)
+    url = result.find_element_by_css_selector("a[href*='/']").get_attribute("href")
+    print(url)
+    sleep(1)
+    driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+    driver.switch_to.window(driver.window_handles[1])
+  else:
+    nextButton = driver.find_element_by_css_selector("button[class*='au aw']")
+    results = driver.find_element_by_xpath("/html/body/div/div/main/div[3]").get_attribute("class")
+    print(results)
+    
+
+  
+  
+
+  #Xpath- //button[starts-with(@id, 'save') and contains(@class,'publish')]
+
+
 def main(): 
-  scrap_web(sys.argv[1])
+  if sys.argv[2] == "je":
+    scrap_just_eat(sys.argv[1])
+  else:
+    scrap_uber_eats(sys.argv[1])
 main()

@@ -215,25 +215,23 @@ def scrap_uber_eats(address):
       except:
         nextButton = None
     """
-    results = driver.find_elements_by_css_selector("div[class*='g1 g2 g3 g4']")[1].find_elements_by_xpath("//*[contains(@class, 'g5')]")
-    print(len(results))
-    result = results[0]
-    #result.find_element_by_tag_name("figure").send_keys(Keys.CONTROL + Keys.RETURN)
-    url = result.find_element_by_css_selector("a[href*='/']").get_attribute("href")
+    results = driver.find_element_by_xpath("/html/body/div/div/main/div/div[3]/div[2]/div/div[2]").find_elements_by_xpath("./div")
+    url = results[0].find_element_by_css_selector("a[href*='/']").get_attribute("href")
     print(url)
-    sleep(1)
-    driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
-    driver.switch_to.window(driver.window_handles[1])
+    
+    driver.execute_script("window.open('" +url+"','_blank')")
+    sleep(2)
+    driver.switch_to.window(driver.window_handles[1]) 
   else:
     nextButton = driver.find_element_by_css_selector("button[class*='au aw']")
-    results = driver.find_element_by_xpath("/html/body/div/div/main/div[3]").get_attribute("class")
-    print(results)
+    results = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/div[2]").find_elements_by_xpath("./div")[6:]
+    url = results[0].find_element_by_css_selector("a[href*='/']").get_attribute("href")
     
-
+    driver.execute_script("window.open('" +url+"','_blank')")
+    sleep(2)
+    driver.switch_to.window(driver.window_handles[1]) 
   
   
-
-  #Xpath- //button[starts-with(@id, 'save') and contains(@class,'publish')]
 
 
 def main(): 

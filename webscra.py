@@ -216,23 +216,27 @@ def scrap_uber_eats(address):
         nextButton = None
     """
     results = driver.find_element_by_xpath("/html/body/div/div/main/div/div[3]/div[2]/div/div[2]").find_elements_by_xpath("./div")
-    url = results[0].find_element_by_css_selector("a[href*='/']").get_attribute("href")
-    print(url)
-    
-    driver.execute_script("window.open('" +url+"','_blank')")
-    sleep(2)
-    driver.switch_to.window(driver.window_handles[1]) 
+
   else:
     nextButton = driver.find_element_by_css_selector("button[class*='au aw']")
     results = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/div[2]").find_elements_by_xpath("./div")[6:]
-    url = results[0].find_element_by_css_selector("a[href*='/']").get_attribute("href")
-    
-    driver.execute_script("window.open('" +url+"','_blank')")
-    sleep(2)
-    driver.switch_to.window(driver.window_handles[1]) 
-  
-  
 
+  url = results[0].find_element_by_css_selector("a[href*='/']").get_attribute("href")  
+  driver.execute_script("window.open('" +url+"','_blank')")
+  sleep(2)
+  driver.switch_to.window(driver.window_handles[1]) 
+
+  elements = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/ul").find_elements_by_xpath("./li")
+  
+  name = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/h1").text
+  types = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[1]").text
+  address = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[2]").text
+  image = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/figure/div/img").get_attribute("src")
+
+  print(name)
+  print(types)
+  print(address)
+  print(image)
 
 def main(): 
   if sys.argv[2] == "je":

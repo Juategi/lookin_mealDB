@@ -49,6 +49,10 @@ def xmlJson(filename):
     menu.append(element)
   return menu
 
+def sort(elements):
+  min = elements[0]
+  for element in elements[1:]:
+    if element["coordinates"][0]
   
 def menuFromXml(filename):
   menu = xmlJson(filename)
@@ -56,6 +60,8 @@ def menuFromXml(filename):
   entries = [element for element in menu if element["category"] == "name"]
   prices = [element for element in menu if element["category"] == "price"]
   
+
+
     
 def main(): 
   #nanonets(sys.argv[1])

@@ -6791,37 +6791,50 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1603348170326	Marionette	INFO	Listening on port 52134
 1603348170470	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
-1603348737916	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofile69ev51"
-console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1603348739269	Marionette	INFO	Listening on port 52313
-1603348739425	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
-1603348769072	Marionette	INFO	Stopped listening on port 52313
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1603353233092	Marionette	INFO	Stopped listening on port 52134
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-1603349079695	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofile6Eb6ME"
-console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1603349081071	Marionette	INFO	Listening on port 52463
-1603349081202	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
-1603349113440	Marionette	INFO	Stopped listening on port 52463
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
-1603349119094	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofile9dR1ux"
-console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1603349120459	Marionette	INFO	Listening on port 52604
-1603349120602	Marionette	WARN	TLS certificate errors will be ignored for this session
+ll be ignored for this session
 JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
 1603349183762	Marionette	INFO	Stopped listening on port 52604
 
@@ -6971,4 +6984,1622 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 1603349561435	Marionette	INFO	Listening on port 53279
 1603349561587	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603349665486	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileVHYHj3"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603349666824	Marionette	INFO	Listening on port 53467
+1603349666995	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1603351170412	Marionette	INFO	Stopped listening on port 53467
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603351398641	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileyMTwiD"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603351400032	Marionette	INFO	Listening on port 53682
+1603351400150	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1603352436955	Marionette	INFO	Stopped listening on port 53682
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603352442485	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofilea672CG"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603352443854	Marionette	INFO	Listening on port 53899
+1603352443993	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603352756380	Marionette	INFO	Stopped listening on port 53899
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603353242551	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofilefUmjL5"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603353243891	Marionette	INFO	Listening on port 54092
+1603353244068	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603353555805	Marionette	INFO	Stopped listening on port 54092
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603365274998	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofilegYuEe2"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603365276373	Marionette	INFO	Listening on port 54727
+1603365276511	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:857:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:632:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:111:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:416:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 111, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 111))
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1603367536967	Marionette	INFO	Stopped listening on port 54727
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603367547726	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileHl469K"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603367549089	Marionette	INFO	Listening on port 55080
+1603367549233	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1603371311804	Marionette	INFO	Stopped listening on port 55080
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603371317526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofilevp2rP2"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603371318840	Marionette	INFO	Listening on port 55821
+1603371319033	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1603371421195	Marionette	INFO	Stopped listening on port 55821
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603371426624	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileAvXTk2"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603371427987	Marionette	INFO	Listening on port 55979
+1603371428130	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1603371686025	Marionette	INFO	Stopped listening on port 55979
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603371690908	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofile2tThNM"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603371692273	Marionette	INFO	Listening on port 56191
+1603371692422	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1603372157034	Marionette	INFO	Stopped listening on port 56191
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603372163613	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofilexPqgdM"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603372165044	Marionette	INFO	Listening on port 56432
+1603372165120	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603375247022	Marionette	INFO	Stopped listening on port 56432
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603375253068	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofilemjh8uO"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603375254452	Marionette	INFO	Listening on port 57784
+1603375254575	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603376906953	Marionette	INFO	Stopped listening on port 57784
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603387557176	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofilePZRE8n"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603387558761	Marionette	INFO	Listening on port 60165
+1603387559184	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603387626039	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileBYpLi2"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603387627436	Marionette	INFO	Listening on port 60267
+1603387627546	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603387653141	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1603387662851	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603390133483	Marionette	INFO	Stopped listening on port 60267
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+adCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603390122068	Marionette	INFO	Listening on port 61059
+1603390122144	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603390344847	Marionette	INFO	Stopped listening on port 61059
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+adCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603390144022	Marionette	INFO	Listening on port 61191
+1603390144138	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
 JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 

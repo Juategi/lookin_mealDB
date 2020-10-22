@@ -9,6 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep 
 from pathlib import Path
 import json
+from datetime import datetime
 import sys,os
 import time 
 import re
@@ -196,7 +197,7 @@ def scrap_uber_eats(address):
   sleep(3)
   input_name = driver.find_element_by_css_selector("input[id='location-typeahead-home-input']")
   input_name.send_keys(address)
-  time.sleep(2)
+  sleep(2)
   #button = driver.find_element_by_css_selector("button[class='cb c2 c3 cc cd ce bh ca c3 cf b6 aq az c6 b4 cb cg ch ci cj ck cl']")
   firstLoc = driver.find_element_by_css_selector("li[id='location-typeahead-home-item-0']")
   firstLoc.click()
@@ -206,7 +207,7 @@ def scrap_uber_eats(address):
   except:
     nextButton = None
   if nextButton != None:
-    """
+
     while nextButton != None :
       nextButton.click()
       sleep(9)
@@ -214,39 +215,70 @@ def scrap_uber_eats(address):
         nextButton = driver.find_element_by_css_selector("button[class*='ce bh ca c3 cf er aq']")
       except:
         nextButton = None
-    """
+
     results = driver.find_element_by_xpath("/html/body/div/div/main/div/div[3]/div[2]/div/div[2]").find_elements_by_xpath("./div")
 
   else:
-    nextButton = driver.find_element_by_css_selector("button[class*='au aw']")
+    nextButton =  driver.find_element_by_xpath("/html/body/div/div/main/div[3]/button")
+
+    while nextButton != None :
+      nextButton.click()
+      sleep(9)
+      try:
+        nextButton = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/button")
+      except:
+        nextButton = None
+
     results = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/div[2]").find_elements_by_xpath("./div")[6:]
 
-  url = results[0].find_element_by_css_selector("a[href*='/']").get_attribute("href")  
-  driver.execute_script("window.open('" +url+"','_blank')")
-  sleep(2)
-  driver.switch_to.window(driver.window_handles[1]) 
-  
-  sleep(3)
-  name = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/h1").text
-  types = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[1]").text[2:].replace("\n", "").strip().split("•")[1:]
-  address = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[2]").text.split("•")[0].replace("\n", "").strip()
-  image = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/figure/div/img").get_attribute("src")
+  for result in results:
+    url = result.find_element_by_css_selector("a[href*='/']").get_attribute("href")  
+    driver.execute_script("window.open('" +url+"','_blank')")
+    sleep(2)
+    driver.switch_to.window(driver.window_handles[1]) 
+    
+    WebDriverWait(driver, 100).until(EC.presence_of_element_located((By.ID, "footer")))
+    sleep(5)
+    name = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/h1").text
+    types = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[1]").text[2:].replace("\n", "").strip().split("•")[1:]
+    address = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[2]").text.split("•")[0].replace("\n", "").strip()
+    image = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/figure/div/img").get_attribute("src")
 
-  sections = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/ul").find_elements_by_xpath("./li")
-  menu = {}
-  for section in sections:
-    menu[section.find_element_by_tag_name("h2").text] = []
-    for element in section.find_element_by_tag_name("ul").find_elements_by_xpath("./li"):
-      entry = {}
-      entry["name"] = element.find_element_by_xpath("./div/div/div/div/h4/div").text
-      try:
-        entry["description"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text
-        entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[2]/div").text[:-2]
-      except:
-        entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text[:-2]
-      menu[section.find_element_by_tag_name("h2").text].append(entry)
-  print(menu)
+    sections = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/ul").find_elements_by_xpath("./li")
+    menu = {}
+    for section in sections:
+      menu[section.find_element_by_tag_name("h2").text] = []
+      for element in section.find_element_by_tag_name("ul").find_elements_by_xpath("./li"):
+        entry = {}
+        entry["name"] = element.find_element_by_xpath("./div/div/div/div/h4/div").text
+        try:
+          entry["description"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text
+          entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[2]/div").text[:-2]
+        except:
+          entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text[:-2]
+          entry["description"] = ""
+        try:
+          entry["image"] = element.find_element_by_xpath("./div/div/div/div[2]/picture/img").get_attribute("src")
+        except:
+          entry["image"] = ""
 
+        menu[section.find_element_by_tag_name("h2").text].append(entry)
+    data = {}
+    data["url"] = url
+    data["menu"] = menu
+    data["name"] = name
+    data["types"] = types
+    data["image"] = image
+    data["address"] = address
+    final[i] = data
+    i += 1
+    driver.close()
+    driver.switch_to.window(driver.window_handles[0])
+
+  time = str(datetime.now().time())[:-10]
+  with open('valencia_uber_'+time+'.json', 'w') as fp:
+    json.dump(final, fp) 
+  driver.close()
 
 def main(): 
   if sys.argv[2] == "je":

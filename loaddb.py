@@ -10,14 +10,25 @@ import http
 import requests
 import unidecode
 
-def load_json(filename):
-    with open(filename) as json_file:
-        data = json.load(json_file)
-        for i, val in enumerate(data):
-            name = data[str(i)]['name']
-            
+def nanonets(filename):
+  url = 'https://app.nanonets.com/api/v2/OCR/Model/92368006-2d25-4b9e-a188-17c5b837b0a2/LabelUrls/'
+
+  headers = {
+      'accept': 'application/x-www-form-urlencoded'
+  }
+
+  data = {'urls' : [filename]}
+
+  response = requests.request('POST', url, headers=headers, auth=requests.auth.HTTPBasicAuth('1Np9aBp8m9j8WCnN6reOjZTpaRD96eF-', ''), data=data)
+  
+  result = json.loads(response.text)
+  img = result["result"][0]["input"]
+  menu = result["result"][0]["prediction"]
+  print(menu)
+  print(img)
+                
             
     
 def main(): 
-  load_json(sys.argv[1])
+  nanonets(sys.argv[1])
 main()

@@ -8603,3 +8603,157 @@ JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: :
 JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
 JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
 JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603392224697	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofilelhJZvr"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603392226264	Marionette	INFO	Listening on port 61810
+1603392226703	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603393010151	Marionette	INFO	Stopped listening on port 61810
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603393015788	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileM6PeWa"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603393017209	Marionette	INFO	Listening on port 62091
+1603393017294	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603394880571	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileRYtM90"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603394882100	Marionette	INFO	Listening on port 62558
+1603394882579	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603394890575	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1603394909836	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603395274141	Marionette	INFO	Stopped listening on port 62558
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603395293857	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileapffg1"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603395295260	Marionette	INFO	Listening on port 62788
+1603395295361	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603395302558	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1603395321922	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1603395331637	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1603395350894	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603395926082	Marionette	INFO	Stopped listening on port 62788
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

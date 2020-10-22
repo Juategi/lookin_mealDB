@@ -180,7 +180,8 @@ def scrap_just_eat(address):
     driver.close()
     driver.switch_to.window(driver.window_handles[0]) 
 
-  with open('valencia_je2.json', 'w') as fp:
+  time = str(datetime.now().time())[:-10]
+  with open('valencia_je_'+time+'.json', 'w') as fp:
     json.dump(final, fp) 
   driver.close()
 
@@ -237,8 +238,9 @@ def scrap_uber_eats(address):
     sleep(2)
     driver.switch_to.window(driver.window_handles[1]) 
     
-    WebDriverWait(driver, 100).until(EC.presence_of_element_located((By.ID, "footer")))
     sleep(5)
+    WebDriverWait(driver, 250).until(EC.presence_of_element_located((By.ID, "footer")))
+    sleep(10)
     name = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/h1").text
     types = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[1]").text[2:].replace("\n", "").strip().split("•")[1:]
     address = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[2]").text.split("•")[0].replace("\n", "").strip()

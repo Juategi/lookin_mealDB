@@ -49,17 +49,23 @@ def xmlJson(filename):
     menu.append(element)
   return menu
 
-def sort(elements):
-  min = elements[0]
-  for element in elements[1:]:
-    if element["coordinates"][0]
-  
+
 def menuFromXml(filename):
   menu = xmlJson(filename)
   sections = [element for element in menu if element["category"] == "category"]
   entries = [element for element in menu if element["category"] == "name"]
   prices = [element for element in menu if element["category"] == "price"]
   
+  for entry in entries:
+    closest = None
+    for section in sections:
+      if section["coordinates"][1] < entry["coordinates"][3] and abs(int(section["coordinates"][0]) - int(entry["coordinates"][0])) < 30:
+        if closest == None:
+          closest = section
+        elif section["coordinates"][1] > closest["coordinates"][1]:
+          closest = section
+    entry["section"] = closest["name"]
+  print(entries)
 
 
     

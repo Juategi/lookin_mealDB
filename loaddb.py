@@ -13,7 +13,7 @@ from xmljson import badgerfish as bf
 from xml.etree.ElementTree import fromstring
 import xml.etree.ElementTree as ET
 
-def nanonets(filename):
+def uploadNanonets(filename):
   url = 'https://app.nanonets.com/api/v2/OCR/Model/92368006-2d25-4b9e-a188-17c5b837b0a2/LabelUrls/'
 
   headers = {
@@ -31,7 +31,7 @@ def nanonets(filename):
   print(img)
                 
 
-def xml_json(filename):
+def xmlJson(filename):
   parser = ET.XMLParser(encoding="utf-8")
   xml = ET.parse(filename, parser=parser).getroot()
   img = xml[0].text
@@ -50,10 +50,15 @@ def xml_json(filename):
   return menu
 
   
-
+def menuFromXml(filename):
+  menu = xmlJson(filename)
+  sections = [element for element in menu if element["category"] == "category"]
+  entries = [element for element in menu if element["category"] == "name"]
+  prices = [element for element in menu if element["category"] == "price"]
+  
     
 def main(): 
   #nanonets(sys.argv[1])
-  xml_json(sys.argv[1])
+  menuFromXml(sys.argv[1])
 main()
 

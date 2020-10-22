@@ -225,18 +225,28 @@ def scrap_uber_eats(address):
   driver.execute_script("window.open('" +url+"','_blank')")
   sleep(2)
   driver.switch_to.window(driver.window_handles[1]) 
-
-  elements = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/ul").find_elements_by_xpath("./li")
   
+  sleep(3)
   name = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/h1").text
-  types = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[1]").text
-  address = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[2]").text
-  image = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/figure/div/img").get_attribute("src")
+  types = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[1]").text[2:].replace("\n", "").strip().split("•")[1:]
+  address = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[2]").text.split("•")[0].replace("\n", "").strip()
+  image = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/figure/div/img").get_attribute("src")
 
-  print(name)
-  print(types)
-  print(address)
-  print(image)
+  sections = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/ul").find_elements_by_xpath("./li")
+  menu = {}
+  for section in sections:
+    menu[section.find_element_by_tag_name("h2").text] = []
+    for element in section.find_element_by_tag_name("ul").find_elements_by_xpath("./li"):
+      entry = {}
+      entry["name"] = element.find_element_by_xpath("./div/div/div/div/h4/div").text
+      try:
+        entry["description"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text
+        entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[2]/div").text[:-2]
+      except:
+        entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text[:-2]
+      menu[section.find_element_by_tag_name("h2").text].append(entry)
+  print(menu)
+
 
 def main(): 
   if sys.argv[2] == "je":

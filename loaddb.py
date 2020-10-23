@@ -50,18 +50,28 @@ def xmlJson(filename):
     menu.append(element)
   return menu
 
+def isCloseX(sections, entry, sectionSelected):
+  distance = abs(int(sectionSelected["coordinates"][0]) - int(entry["coordinates"][0]))
+  total = 0
+  for section in sections:
+    total += abs(int(entry["coordinates"][0]) - int(section["coordinates"][0]))
+  avg = total/len(sections)
+  if distance < avg:
+    return True
+  else:
+    return False
 
 def menuFromXml(filename):
   menu = xmlJson(filename)
   sections = [element for element in menu if element["category"] == "category"]
   entries = [element for element in menu if element["category"] == "name"]
   prices = [element for element in menu if element["category"] == "price"]
-  CAT_X_DIF = 30
-  PRICE_Y_DIF = 40
+  PRICE_Y_threshold = 40
+  PRICE_X_threshold = 10
   for entry in entries:
     closest = None
     for section in sections:
-      if int(section["coordinates"][1]) < int(entry["coordinates"][3]) and abs(int(section["coordinates"][0]) - int(entry["coordinates"][0])) < CAT_X_DIF:
+      if int(section["coordinates"][1]) < int(entry["coordinates"][3]) and isCloseX(sections,entry,section):
         if closest == None:
           closest = section
         elif int(section["coordinates"][1]) > int(closest["coordinates"][1]):
@@ -70,10 +80,10 @@ def menuFromXml(filename):
     closesPrice = None
     aux = []
     for price in prices:
-      if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_DIF:
+      if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_threshold:
         if closesPrice == None:
           closesPrice = price
-        elif int(price["coordinates"][0]) < int(closesPrice["coordinates"][0]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closesPrice["coordinates"][3]) + int(closesPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
+        elif int(price["coordinates"][0]) < (int(closesPrice["coordinates"][0])+PRICE_X_threshold) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closesPrice["coordinates"][3]) + int(closesPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
           closesPrice = price
     entry["price"] = closesPrice["name"]
   final = {}

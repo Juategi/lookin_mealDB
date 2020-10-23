@@ -70,22 +70,26 @@ def menuFromXml(filename):
   PRICE_X_threshold = 10
   for entry in entries:
     closest = None
+    validSections = []
     for section in sections:
-      if int(section["coordinates"][1]) < int(entry["coordinates"][3]) and isCloseX(sections,entry,section):
+      if int(section["coordinates"][1]) < int(entry["coordinates"][3]):
+        validSections.append(section)
+    for section in validSections:
+      if isCloseX(validSections,entry,section):
         if closest == None:
           closest = section
         elif int(section["coordinates"][1]) > int(closest["coordinates"][1]):
           closest = section
     entry["section"] = closest["name"]
-    closesPrice = None
+    closestPrice = None
     aux = []
     for price in prices:
       if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_threshold:
-        if closesPrice == None:
-          closesPrice = price
-        elif int(price["coordinates"][0]) < (int(closesPrice["coordinates"][0])+PRICE_X_threshold) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closesPrice["coordinates"][3]) + int(closesPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
-          closesPrice = price
-    entry["price"] = closesPrice["name"]
+        if closestPrice == None:
+          closestPrice = price
+        elif int(price["coordinates"][0]) < (int(closestPrice["coordinates"][0])+PRICE_X_threshold) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closestPrice["coordinates"][3]) + int(closestPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
+          closestPrice = price
+    entry["price"] = closestPrice["name"]
   final = {}
   for section in sections:
     final[section["name"]] = []

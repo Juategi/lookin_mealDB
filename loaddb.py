@@ -45,7 +45,7 @@ def xmlJson(filename):
     element["name"] = name
     element["category"] = category
     element["coordinates"] = coordinates
-    element["score"] = score
+    #element["score"] = score
     menu.append(element)
   return menu
 
@@ -55,18 +55,37 @@ def menuFromXml(filename):
   sections = [element for element in menu if element["category"] == "category"]
   entries = [element for element in menu if element["category"] == "name"]
   prices = [element for element in menu if element["category"] == "price"]
-  
+  CAT_X_DIF = 30
+  PRICE_Y_DIF = 40
   for entry in entries:
     closest = None
     for section in sections:
-      if section["coordinates"][1] < entry["coordinates"][3] and abs(int(section["coordinates"][0]) - int(entry["coordinates"][0])) < 30:
+      if int(section["coordinates"][1]) < int(entry["coordinates"][3]) and abs(int(section["coordinates"][0]) - int(entry["coordinates"][0])) < CAT_X_DIF:
         if closest == None:
           closest = section
-        elif section["coordinates"][1] > closest["coordinates"][1]:
+        elif int(section["coordinates"][1]) > int(closest["coordinates"][1]):
           closest = section
     entry["section"] = closest["name"]
-  print(entries)
-
+    closesPrice = None
+    aux = []
+    for price in prices:
+      if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_DIF:
+        if closesPrice == None:
+          closesPrice = price
+        elif int(price["coordinates"][0]) < int(closesPrice["coordinates"][0]):
+          closesPrice = price
+    entry["price"] = closesPrice["name"]
+  final = {}
+  for section in sections:
+    final[section["name"]] = []
+  for entry in entries:
+    final[entry["section"]].append({
+      "name" : entry["name"],
+      "price" : entry["price"],
+    })
+  print(final)
+  with open(filename[:-4] + '.json', 'w') as fp:
+    json.dump(final, fp) 
 
     
 def main(): 

@@ -53,10 +53,11 @@ def xmlJson(filename):
 def isCloseX(sections, entry, sectionSelected):
   distance = abs(int(sectionSelected["coordinates"][0]) - int(entry["coordinates"][0]))
   total = 0
+  X_threshold = 20
   for section in sections:
     total += abs(int(entry["coordinates"][0]) - int(section["coordinates"][0]))
   avg = total/len(sections)
-  if distance < avg:
+  if distance <= avg + X_threshold:
     return True
   else:
     return False
@@ -66,19 +67,18 @@ def menuFromXml(filename):
   sections = [element for element in menu if element["category"] == "category"]
   entries = [element for element in menu if element["category"] == "name"]
   prices = [element for element in menu if element["category"] == "price"]
-  PRICE_Y_threshold = 40
-  PRICE_X_threshold = 10
+  PRICE_Y_threshold = 50
+  PRICE_X_threshold = 15
   for entry in entries:
     closest = None
     validSections = []
     for section in sections:
-      if int(section["coordinates"][1]) < int(entry["coordinates"][3]):
+      if int(section["coordinates"][3]) < int(entry["coordinates"][1]):
         validSections.append(section)
     for section in validSections:
-      if isCloseX(validSections,entry,section):
-        if closest == None:
+      if closest == None:
           closest = section
-        elif int(section["coordinates"][1]) > int(closest["coordinates"][1]):
+      if int(section["coordinates"][1]) > int(closest["coordinates"][1]) and isCloseX(validSections,entry,section): 
           closest = section
     entry["section"] = closest["name"]
     closestPrice = None
@@ -87,8 +87,9 @@ def menuFromXml(filename):
       if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_threshold:
         if closestPrice == None:
           closestPrice = price
-        elif int(price["coordinates"][0]) < (int(closestPrice["coordinates"][0])+PRICE_X_threshold) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closestPrice["coordinates"][3]) + int(closestPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
+        elif int(price["coordinates"][0]) < (int(closestPrice["coordinates"][0])+PRICE_X_threshold) and int(price["coordinates"][0]) - int(closestPrice["coordinates"][0]) < (abs(int(closestPrice["coordinates"][0])-int(closestPrice["coordinates"][2]))) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closestPrice["coordinates"][3]) + int(closestPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
           closestPrice = price
+          
     entry["price"] = closestPrice["name"]
   final = {}
   for section in sections:
@@ -99,9 +100,9 @@ def menuFromXml(filename):
       price = re.findall("\d+\.\d+", entry["price"])
     final[entry["section"]].append({
       "name" : entry["name"],
-      "price" : price,
+      "price" : price[0],
     })
-  print(final)
+  #print(final)
   with open(filename[:-4] + '.json', 'w') as fp:
     json.dump(final, fp) 
 

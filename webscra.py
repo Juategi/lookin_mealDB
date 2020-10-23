@@ -279,6 +279,7 @@ def scrap_uber_eats(address):
       driver.close()
       driver.switch_to.window(driver.window_handles[0])
     except Exception as e:
+      print(e)
       errors[j] = {
         "url":url,
         "error": str(e)
@@ -287,7 +288,7 @@ def scrap_uber_eats(address):
       driver.close()
       driver.switch_to.window(driver.window_handles[0])
 
-  time = str(datetime.now().time())[:-10]
+  time = str(datetime.now().time())[:-7]
   with open('valencia_uber_'+time+'.json', 'w') as fp:
     json.dump(final, fp) 
   with open('valencia_uber_'+time+'error.json', 'w') as ep:

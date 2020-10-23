@@ -120,7 +120,7 @@ def scrap_just_eat(address):
         continue
       for section  in sections :
         menu[section.get_attribute("data-test-id")] = []
-        for element in section.find_element_by_css_selector("div[class='accordion-content']").find_elements_by_tag_name("div") : #coge todos los div
+        for element in section.find_element_by_css_selector("div[class='accordion-content']").find_elements_by_tag_name("div") :
           entry = {}
           aux = element.text.split("\n")
           if len(aux) < 2:

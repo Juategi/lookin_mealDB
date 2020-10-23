@@ -7,6 +7,7 @@
 import sys,os
 import json
 import http
+import re
 import requests
 import unidecode
 from xmljson import badgerfish as bf
@@ -72,16 +73,19 @@ def menuFromXml(filename):
       if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_DIF:
         if closesPrice == None:
           closesPrice = price
-        elif int(price["coordinates"][0]) < int(closesPrice["coordinates"][0]): #recomprobar la Y para solidez
+        elif int(price["coordinates"][0]) < int(closesPrice["coordinates"][0]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closesPrice["coordinates"][3]) + int(closesPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
           closesPrice = price
     entry["price"] = closesPrice["name"]
   final = {}
   for section in sections:
     final[section["name"]] = []
   for entry in entries:
+    price = re.findall("\d+\,\d+", entry["price"])
+    if price == []:
+      price = re.findall("\d+\.\d+", entry["price"])
     final[entry["section"]].append({
       "name" : entry["name"],
-      "price" : entry["price"],
+      "price" : price,
     })
   print(final)
   with open(filename[:-4] + '.json', 'w') as fp:

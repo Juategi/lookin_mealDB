@@ -8757,3 +8757,39 @@ JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: :
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1603448672465	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileaR343I"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603448674096	Marionette	INFO	Listening on port 61968
+1603448674473	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603448693335	Marionette	INFO	Stopped listening on port 61968
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603448703536	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileANJoci"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603448704870	Marionette	INFO	Listening on port 62032
+1603448705050	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+JavaScript error: https://connect.facebook.net/en_US/fbevents.js, line 23: : 
+1603448898008	Marionette	INFO	Stopped listening on port 62032
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603448996641	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\juanT\\AppData\\Local\\Temp\\rust_mozprofileMstyUr"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1603448998020	Marionette	INFO	Listening on port 62268
+1603448998150	Marionette	WARN	TLS certificate errors will be ignored for this session

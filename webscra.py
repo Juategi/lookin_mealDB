@@ -22,7 +22,7 @@ def scrap_just_eat(address):
   driver.get("https://www.just-eat.es/")
   final = {}
   i = 0
-  errors = {}
+  errors = []
   #WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "Form_c-search-input_3ySg3 Form_is-notEmpty_WFw9O")))
   #WebDriverWait(driver, 5)
   sleep(3)
@@ -192,6 +192,7 @@ def scrap_uber_eats(address):
   driver.get("https://www.ubereats.com/")
   final = {}
   i = 0
+  j = 0
   errors = {}
   #WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "fz kz g1 g2 g3 g4")))
   #WebDriverWait(driver, 5)
@@ -238,48 +239,59 @@ def scrap_uber_eats(address):
     sleep(2)
     driver.switch_to.window(driver.window_handles[1]) 
     
-    sleep(5)
-    WebDriverWait(driver, 250).until(EC.presence_of_element_located((By.ID, "footer")))
-    sleep(10)
-    name = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/h1").text
-    types = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[1]").text[2:].replace("\n", "").strip().split("•")[1:]
-    address = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[2]").text.split("•")[0].replace("\n", "").strip()
-    image = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/figure/div/img").get_attribute("src")
+    try:
+      sleep(5)
+      WebDriverWait(driver, 250).until(EC.presence_of_element_located((By.ID, "footer")))
+      sleep(10)
+      name = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/h1").text
+      types = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[1]").text[2:].replace("\n", "").strip().split("•")[1:]
+      address = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/div/div[2]/div/div[2]/p[2]").text.split("•")[0].replace("\n", "").strip()
+      image = driver.find_element_by_xpath("/html/body/div/div/main/div[2]/div/figure/div/img").get_attribute("src")
 
-    sections = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/ul").find_elements_by_xpath("./li")
-    menu = {}
-    for section in sections:
-      menu[section.find_element_by_tag_name("h2").text] = []
-      for element in section.find_element_by_tag_name("ul").find_elements_by_xpath("./li"):
-        entry = {}
-        entry["name"] = element.find_element_by_xpath("./div/div/div/div/h4/div").text
-        try:
-          entry["description"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text
-          entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[2]/div").text[:-2]
-        except:
-          entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text[:-2]
-          entry["description"] = ""
-        try:
-          entry["image"] = element.find_element_by_xpath("./div/div/div/div[2]/picture/img").get_attribute("src")
-        except:
-          entry["image"] = ""
+      sections = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/ul").find_elements_by_xpath("./li")
+      menu = {}
+      for section in sections:
+        menu[section.find_element_by_tag_name("h2").text] = []
+        for element in section.find_element_by_tag_name("ul").find_elements_by_xpath("./li"):
+          entry = {}
+          entry["name"] = element.find_element_by_xpath("./div/div/div/div/h4/div").text
+          try:
+            entry["description"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text
+            entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[2]/div").text[:-2]
+          except:
+            entry["price"] = element.find_element_by_xpath("./div/div/div/div/div[1]/div").text[:-2]
+            entry["description"] = ""
+          try:
+            entry["image"] = element.find_element_by_xpath("./div/div/div/div[2]/picture/img").get_attribute("src")
+          except:
+            entry["image"] = ""
 
-        menu[section.find_element_by_tag_name("h2").text].append(entry)
-    data = {}
-    data["url"] = url
-    data["menu"] = menu
-    data["name"] = name
-    data["types"] = types
-    data["image"] = image
-    data["address"] = address
-    final[i] = data
-    i += 1
-    driver.close()
-    driver.switch_to.window(driver.window_handles[0])
+          menu[section.find_element_by_tag_name("h2").text].append(entry)
+      data = {}
+      data["url"] = url
+      data["menu"] = menu
+      data["name"] = name
+      data["types"] = types
+      data["image"] = image
+      data["address"] = address
+      final[i] = data
+      i += 1
+      driver.close()
+      driver.switch_to.window(driver.window_handles[0])
+    except Exception as e:
+      errors[j] = {
+        "url":url,
+        "error": str(e)
+      }
+      j += 1
+      driver.close()
+      driver.switch_to.window(driver.window_handles[0])
 
   time = str(datetime.now().time())[:-10]
   with open('valencia_uber_'+time+'.json', 'w') as fp:
     json.dump(final, fp) 
+  with open('valencia_uber_'+time+'error.json', 'w') as ep:
+    json.dump(errors, ep) 
   driver.close()
 
 def main(): 

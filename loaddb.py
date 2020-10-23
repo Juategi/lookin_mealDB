@@ -72,7 +72,7 @@ def menuFromXml(filename):
       if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_DIF:
         if closesPrice == None:
           closesPrice = price
-        elif int(price["coordinates"][0]) < int(closesPrice["coordinates"][0]):
+        elif int(price["coordinates"][0]) < int(closesPrice["coordinates"][0]): #recomprobar la Y para solidez
           closesPrice = price
     entry["price"] = closesPrice["name"]
   final = {}

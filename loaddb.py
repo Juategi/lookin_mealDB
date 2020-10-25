@@ -72,25 +72,31 @@ def menuFromXml(filename):
   for entry in entries:
     closest = None
     validSections = []
-    for section in sections:
-      if int(section["coordinates"][3]) < int(entry["coordinates"][1]):
-        validSections.append(section)
-    for section in validSections:
-      if closest == None:
-          closest = section
-      if int(section["coordinates"][1]) > int(closest["coordinates"][1]) and isCloseX(validSections,entry,section): 
-          closest = section
-    entry["section"] = closest["name"]
-    closestPrice = None
-    aux = []
-    for price in prices:
-      if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_threshold:
-        if closestPrice == None:
-          closestPrice = price
-        elif int(price["coordinates"][0]) < (int(closestPrice["coordinates"][0])+PRICE_X_threshold) and int(price["coordinates"][0]) - int(closestPrice["coordinates"][0]) < (abs(int(closestPrice["coordinates"][0])-int(closestPrice["coordinates"][2]))) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closestPrice["coordinates"][3]) + int(closestPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
-          closestPrice = price
-          
-    entry["price"] = closestPrice["name"]
+    if len(sections) == 1:
+      entry["section"] = sections[0]["name"]
+    else:
+      for section in sections:
+        if int(section["coordinates"][3]) < int(entry["coordinates"][1]):
+          validSections.append(section)
+      for section in validSections:
+        if closest == None:
+            closest = section
+        if int(section["coordinates"][1]) > int(closest["coordinates"][1]) and isCloseX(validSections,entry,section): 
+            closest = section
+      entry["section"] = closest["name"]
+   
+    if len(prices) == 0:
+      entry["price"] = 0.0
+    else:
+      closestPrice = None
+      aux = []
+      for price in prices:
+        if int(price["coordinates"][0]) > int(entry["coordinates"][2]) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < PRICE_Y_threshold:
+          if closestPrice == None:
+            closestPrice = price
+          elif int(price["coordinates"][0]) < (int(closestPrice["coordinates"][0])+PRICE_X_threshold) and int(price["coordinates"][0]) - int(closestPrice["coordinates"][0]) < (abs(int(closestPrice["coordinates"][0])-int(closestPrice["coordinates"][2]))) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closestPrice["coordinates"][3]) + int(closestPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
+            closestPrice = price
+      entry["price"] = closestPrice["name"]
   final = {}
   for section in sections:
     final[section["name"]] = []
@@ -98,6 +104,10 @@ def menuFromXml(filename):
     price = re.findall("\d+\,\d+", entry["price"])
     if price == []:
       price = re.findall("\d+\.\d+", entry["price"])
+    if price == []:
+      price = re.findall("\d+", entry["price"])
+    if price == []:
+      price.append(0.0)
     final[entry["section"]].append({
       "name" : entry["name"],
       "price" : price[0],

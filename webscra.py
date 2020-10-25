@@ -199,7 +199,7 @@ def scrap_uber_eats(address):
   sleep(3)
   input_name = driver.find_element_by_css_selector("input[id='location-typeahead-home-input']")
   input_name.send_keys(address)
-  sleep(2)
+  sleep(10)
   #button = driver.find_element_by_css_selector("button[class='cb c2 c3 cc cd ce bh ca c3 cf b6 aq az c6 b4 cb cg ch ci cj ck cl']")
   firstLoc = driver.find_element_by_css_selector("li[id='location-typeahead-home-item-0']")
   firstLoc.click()
@@ -288,7 +288,7 @@ def scrap_uber_eats(address):
       driver.close()
       driver.switch_to.window(driver.window_handles[0])
 
-  time = str(datetime.now().time())[:-7]
+  time = str(datetime.now().time())[:-10].replace(":","-")
   with open('valencia_uber_'+time+'.json', 'w') as fp:
     json.dump(final, fp) 
   with open('valencia_uber_'+time+'error.json', 'w') as ep:

@@ -32,7 +32,7 @@ def compare(scrapFile, tripadFile):
         tid = None
         for i,val in enumerate(tripad):
             if "latitude" in tripad[i] and format(float(tripad[i]['latitude']), '.3f') == format(location.latitude, '.3f') and format(float(tripad[i]['longitude']), '.3f') == format(location.longitude, '.3f'):
-                if len(restaurant["name"].split()) <= len(tripad[i]['name'].split):
+                if len(restaurant["name"].split()) <= len(tripad[i]['name'].split()):
                     for word in clean(restaurant["name"]):
                         if word in clean(tripad[i]['name']):
                             tid = i
@@ -84,6 +84,6 @@ def clean(text):
         
 
 def main(): 
-  #compare(sys.argv[1],sys.argv[2])
-  print(clean("HLA PARA - EL ENE A AN PARA THE Y UUU"))
+  compare(sys.argv[1],sys.argv[2])
+  #print(clean("HLA PARA - EL ENE A AN PARA THE Y UUU"))
 main()

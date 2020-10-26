@@ -16,10 +16,11 @@ from geopy.geocoders import GoogleV3
 import requests
 from urllib.request import urlopen
 
+
 def compare(scrapFile, tripadFile):
     scrap = json.load(open(scrapFile, encoding='utf-8'))
     tripad = json.load(open(tripadFile, encoding='utf-8'))
-
+    
     final= {}
     for j,restaurant in enumerate(scrap):
         restaurant = scrap[str(j)]
@@ -31,13 +32,13 @@ def compare(scrapFile, tripadFile):
         tid = None
         for i,val in enumerate(tripad):
             if "latitude" in tripad[i] and format(float(tripad[i]['latitude']), '.3f') == format(location.latitude, '.3f') and format(float(tripad[i]['longitude']), '.3f') == format(location.longitude, '.3f'):
-                if len(restaurant["name"]) <= len(tripad[i]['name']):
-                    for word in restaurant["name"].split():
-                        if word in tripad[i]['name'].split():
+                if len(restaurant["name"].split()) <= len(tripad[i]['name'].split):
+                    for word in clean(restaurant["name"]):
+                        if word in clean(tripad[i]['name']):
                             tid = i
                 else:
-                    for word in tripad[i]['name'].split():
-                        if word in restaurant["name"].split():
+                    for word in clean(tripad[i]['name']):
+                        if word in clean(restaurant["name"]):
                             tid = i
         data = {}
         if tid != None:
@@ -66,7 +67,23 @@ def compare(scrapFile, tripadFile):
 
     with open('SCRAP_TRPAD.json', 'w') as fp:
         json.dump(final, fp) 
-  
+
+
+def clean(text):
+    stop_words_es = ['a', 'al', 'con','de', 'del', 'e', 'el', 'en', 'la', 'las', 'lo', 'los', 'y']
+    stop_words_en = ['a', 'an', 'and', 'the', 'of']
+    aux = text.split()
+    result = []
+    for word in aux:
+        if word.lower() not in stop_words_en and word.lower() not in stop_words_es:
+            clean = re.sub(r'\W+', '', word).strip()
+            if clean != "":
+                result.append(clean)
+    return result
+
+        
+
 def main(): 
-  compare(sys.argv[1],sys.argv[2])
+  #compare(sys.argv[1],sys.argv[2])
+  print(clean("HLA PARA - EL ENE A AN PARA THE Y UUU"))
 main()

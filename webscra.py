@@ -136,11 +136,16 @@ def scrap_just_eat(address):
           menu[section.get_attribute("data-test-id")].append(entry)
 
     print(name)
+    """
     geolocator = GoogleV3(
               api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',
               user_agent='lookinmeal'
           )
     location = geolocator.geocode(address)
+    data["latitude"] = location.latitude
+    data["longitude"] = location.longitude
+    """
+
     data = {}
     data["url"] = link
     data["menu"] = menu
@@ -148,33 +153,7 @@ def scrap_just_eat(address):
     data["types"] = types
     data["image"] = image
     data["address"] = address
-    data["latitude"] = location.latitude
-    data["longitude"] = location.longitude
-
-    """
-    tripad = json.load(open('valencia_tripad.json', encoding='utf-8'))
-    tid = ""
-    for i,val in enumerate(tripad):
-      if "latitude" in tripad[i] and format(float(tripad[i]['latitude']), '.3f') == format(location.latitude, '.3f') and format(float(tripad[i]['longitude']), '.3f') == format(location.longitude, '.3f'):
-        if len(name) <= len(tripad[i]['name']):
-          for word in name.split():
-            if word in tripad[i]['name'].split():
-              tid = tripad[i]['id']
-        else:
-          for word in tripad[i]['name'].split():
-            if word in name.split():
-              tid = tripad[i]['id']   
     
-    if tid == "":
-      data["name"] = name
-      data["types"] = types
-      data["image"] = image
-      data["address"] = address
-      data["latitude"] = location.latitude
-      data["longitude"] = location.longitude
-    else:
-      data["id"] = tid
-    """
     final[i] = data
     i += 1
     driver.close()

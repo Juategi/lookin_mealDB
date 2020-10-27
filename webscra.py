@@ -136,16 +136,6 @@ def scrap_just_eat(address):
           menu[section.get_attribute("data-test-id")].append(entry)
 
     print(name)
-    """
-    geolocator = GoogleV3(
-              api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',
-              user_agent='lookinmeal'
-          )
-    location = geolocator.geocode(address)
-    data["latitude"] = location.latitude
-    data["longitude"] = location.longitude
-    """
-
     data = {}
     data["url"] = link
     data["menu"] = menu

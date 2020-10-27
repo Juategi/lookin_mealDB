@@ -71,15 +71,14 @@ def compareScrapTripad(scrapFile, tripadFile):
 def sumScrapFiles(file1, file2):
     scrap1 = json.load(open(file1, encoding='utf-8'))
     scrap2 = json.load(open(file2, encoding='utf-8'))
-    
+    geolocator = GoogleV3(
+        api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',
+        user_agent='lookinmeal'
+    )
     if len(scrap1) > len(scrap2):
         for i,restaurant1  in enumerate(scrap1):
             print((i+1)*100/len(scrap1),"%")
             restaurant1 = scrap1[str(i)] 
-            geolocator = GoogleV3(
-                api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',
-                user_agent='lookinmeal'
-            )
             location = geolocator.geocode(restaurant1["address"])
             restaurant1["latitude"] = location.latitude
             restaurant1["longitude"] = location.longitude 
@@ -88,10 +87,6 @@ def sumScrapFiles(file1, file2):
             done = False
             for j,restaurant2 in enumerate(scrap2):
                 restaurant2 = scrap2[str(j)] 
-                geolocator = GoogleV3(
-                    api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',
-                    user_agent='lookinmeal'
-                )
                 location = geolocator.geocode(restaurant2["address"])
                 restaurant2["latitude"] = location.latitude
                 restaurant2["longitude"] = location.longitude
@@ -125,10 +120,6 @@ def sumScrapFiles(file1, file2):
         for i,restaurant2 in enumerate(scrap2):
             print((i+1)*100/len(scrap2),"%")
             restaurant2 = scrap2[str(i)] 
-            geolocator = GoogleV3(
-                api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',
-                user_agent='lookinmeal'
-            )
             location = geolocator.geocode(restaurant2["address"])
             restaurant2["latitude"] = location.latitude
             restaurant2["longitude"] = location.longitude
@@ -137,10 +128,6 @@ def sumScrapFiles(file1, file2):
             done = False
             for j,restaurant1 in enumerate(scrap1):
                 restaurant1 = scrap2[str(j)] 
-                geolocator = GoogleV3(
-                    api_key='AIzaSyAIIK4P68Ge26Yc0HkQ6uChj_NEqF2VeCU',
-                    user_agent='lookinmeal'
-                )
                 location = geolocator.geocode(restaurant1["address"])
                 restaurant1["latitude"] = location.latitude
                 restaurant1["longitude"] = location.longitude

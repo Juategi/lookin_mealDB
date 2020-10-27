@@ -17,7 +17,7 @@ from urllib.request import urlopen
 from unidecode import unidecode
 
 
-def compare(scrapFile, tripadFile):
+def compareScrapTripad(scrapFile, tripadFile):
     scrap = json.load(open(scrapFile, encoding='utf-8'))
     tripad = json.load(open(tripadFile, encoding='utf-8'))
     
@@ -202,6 +202,6 @@ def clean(text):
         
 
 def main(): 
-  #compare(sys.argv[1],sys.argv[2])
+  #compareScrapTripad(sys.argv[1],sys.argv[2])
   sumScrapFiles(sys.argv[1],sys.argv[2])
 main()

@@ -197,13 +197,10 @@ def clean(text):
     return result
 
 def prueba(file1,file2):
-    scrap1 = json.load(open(file1, encoding='utf-8'))
-    scrap2 = json.load(open(file2, encoding='utf-8'))
-    with open('SSSS.json', 'w') as fp:
-        json.dump(concatenateDics(scrap2,scrap1), fp) 
+    print("")
 
 def main(): 
   #compareScrapTripad(sys.argv[1],sys.argv[2])
-  sumScrapFiles(sys.argv[1],sys.argv[2])
-  #prueba(sys.argv[1],sys.argv[2])
+  #sumScrapFiles(sys.argv[1],sys.argv[2])
+  prueba(sys.argv[1],sys.argv[2])
 main()

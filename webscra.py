@@ -17,7 +17,12 @@ from geopy.geocoders import GoogleV3
 
 def scrap_just_eat(address):
   print("Buscando ", address)
-  
+  time = str(datetime.now()).split()
+  time[1] = time[1][:-10].replace(":","-")
+  time[0] = time[0]+"_"
+  var = ""
+  var = var.join(time)
+
   driver = webdriver.Firefox(executable_path=r'C:\D\lookin_mealDB\geckodriver.exe') 
   driver.get("https://www.just-eat.es/")
   final = {}
@@ -149,14 +154,19 @@ def scrap_just_eat(address):
     driver.close()
     driver.switch_to.window(driver.window_handles[0]) 
 
-  time = str(datetime.now().time())[:-10]
-  with open('valencia_je_'+time+'.json', 'w') as fp:
+  with open('valencia_je_'+var+'.json', 'w') as fp:
     json.dump(final, fp) 
   driver.close()
 
 
 def scrap_uber_eats(address):
   print("Buscando ", address)
+  time = str(datetime.now()).split()
+  time[1] = time[1][:-10].replace(":","-")
+  time[0] = time[0]+"_"
+  var = ""
+  var = var.join(time)
+  
   driver = webdriver.Firefox(executable_path=r'C:\D\lookin_mealDB\geckodriver.exe') 
   driver.get("https://www.ubereats.com/")
   final = {}
@@ -256,17 +266,17 @@ def scrap_uber_eats(address):
       j += 1
       driver.close()
       driver.switch_to.window(driver.window_handles[0])
-
-  time = str(datetime.now().time())[:-10].replace(":","-")
-  with open('valencia_uber_'+time+'.json', 'w') as fp:
+  with open('valencia_uber_'+var+'.json', 'w') as fp:
     json.dump(final, fp) 
-  with open('valencia_uber_'+time+'error.json', 'w') as ep:
+  with open('valencia_uber_'+var+'error.json', 'w') as ep:
     json.dump(errors, ep) 
   driver.close()
 
 def main(): 
   if sys.argv[2] == "je":
     scrap_just_eat(sys.argv[1])
-  else:
+  elif sys.argv[2] == "ub":
     scrap_uber_eats(sys.argv[1])
+  else:
+    print("Use 'je' or 'ub' as last argument")
 main()

@@ -77,6 +77,11 @@ def sumScrapFiles(file1, file2):
     )
     if len(scrap1) > len(scrap2):
         for i,restaurant1  in enumerate(scrap1):
+            for j,restaurant2 in enumerate(scrap2):
+                restaurant2 = scrap2[str(j)] 
+                location = geolocator.geocode(restaurant2["address"])
+                restaurant2["latitude"] = location.latitude
+                restaurant2["longitude"] = location.longitude
             print((i+1)*100/len(scrap1),"%")
             restaurant1 = scrap1[str(i)] 
             location = geolocator.geocode(restaurant1["address"])
@@ -87,9 +92,6 @@ def sumScrapFiles(file1, file2):
             done = False
             for j,restaurant2 in enumerate(scrap2):
                 restaurant2 = scrap2[str(j)] 
-                location = geolocator.geocode(restaurant2["address"])
-                restaurant2["latitude"] = location.latitude
-                restaurant2["longitude"] = location.longitude
                 latitude2 = restaurant2["latitude"]
                 longitude2 = restaurant2["longitude"]
                 if restaurant1["url"] == restaurant2["url"]:
@@ -114,12 +116,20 @@ def sumScrapFiles(file1, file2):
                                     done = True
                                     scrap2 = reordenateDic(scrap2)
                                     break
-                        if done: break
+                        if done: 
+                            print(restaurant1["name"]) 
+                            print(restaurant2["name"])
+                            break
         final = concatenateDics(scrap1,scrap2)
     else:
         for i,restaurant2 in enumerate(scrap2):
+            for j,restaurant1 in enumerate(scrap1):
+                restaurant1 = scrap1[str(j)] 
+                location = geolocator.geocode(restaurant1["address"])
+                restaurant1["latitude"] = location.latitude
+                restaurant1["longitude"] = location.longitude
             print((i+1)*100/len(scrap2),"%")
-            restaurant2 = scrap2[str(i)] 
+            restaurant2 = scrap2[str(i)]
             location = geolocator.geocode(restaurant2["address"])
             restaurant2["latitude"] = location.latitude
             restaurant2["longitude"] = location.longitude
@@ -127,10 +137,7 @@ def sumScrapFiles(file1, file2):
             longitude2 = restaurant2["longitude"]
             done = False
             for j,restaurant1 in enumerate(scrap1):
-                restaurant1 = scrap2[str(j)] 
-                location = geolocator.geocode(restaurant1["address"])
-                restaurant1["latitude"] = location.latitude
-                restaurant1["longitude"] = location.longitude
+                restaurant1 = scrap1[str(j)] 
                 latitude1 = restaurant1["latitude"]
                 longitude1 = restaurant1["longitude"]
                 if restaurant1["url"] == restaurant2["url"]:
@@ -155,7 +162,10 @@ def sumScrapFiles(file1, file2):
                                     done = True
                                     scrap1 = reordenateDic(scrap1)
                                     break
-                        if done: break
+                        if done: 
+                            print(restaurant1["name"]) 
+                            print(restaurant2["name"])
+                            break 
         final = concatenateDics(scrap2,scrap1)
     with open('SCRAP_SCRAP.json', 'w') as fp:
         json.dump(final, fp) 

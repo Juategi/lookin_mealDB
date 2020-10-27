@@ -65,7 +65,7 @@ def compareScrapTripad(scrapFile, tripadFile):
         print(data["name"])
         print((j+1)*100/len(scrap),"%")
 
-    with open('SCRAP_TRPAD.json', 'w') as fp:
+    with open('scraping/SCRAP_TRPAD.json', 'w') as fp:
         json.dump(final, fp) 
 
 def sumScrapFiles(file1, file2):
@@ -167,7 +167,7 @@ def sumScrapFiles(file1, file2):
                             print(restaurant2["name"])
                             break 
         final = concatenateDics(scrap2,scrap1)
-    with open('SCRAP_SCRAP.json', 'w') as fp:
+    with open('scraping/SCRAP_SCRAP.json', 'w') as fp:
         json.dump(final, fp) 
 
 
@@ -197,10 +197,11 @@ def clean(text):
     return result
 
 def prueba(file1,file2):
-    print("")
+    with open('nanonets/prueb.json', 'w') as fp:
+        json.dump({"aaa":"aaaaa"}, fp) 
 
 def main(): 
   #compareScrapTripad(sys.argv[1],sys.argv[2])
-  #sumScrapFiles(sys.argv[1],sys.argv[2])
-  prueba(sys.argv[1],sys.argv[2])
+  sumScrapFiles(sys.argv[1],sys.argv[2])
+  #prueba(sys.argv[1],sys.argv[2])
 main()

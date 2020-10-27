@@ -33,10 +33,10 @@ def scrap_just_eat(address):
   sleep(3)
   input_name = driver.find_element_by_css_selector("input[type='text']")
   input_name.send_keys(address)
-  time.sleep(2)
+  sleep(2)
   button = driver.find_element_by_css_selector("button[type='submit']")
   button.click()
-  time.sleep(1)
+  sleep(1)
   results1 = driver.find_element_by_css_selector("div[data-test-id='searchresults']").find_element_by_class_name("c-listing ").find_element_by_class_name("c-listing-loader").find_elements_by_tag_name("section")
   results2 = driver.find_element_by_css_selector("div[data-test-id='searchresults']").find_element_by_css_selector("div[class='c-listing c-listing--subsequent ']").find_element_by_class_name("c-listing-loader").find_elements_by_tag_name("section")
   results3 = driver.find_element_by_css_selector("div[data-test-id='searchresults']").find_element_by_css_selector("div[class='c-listing c-listing--inactive ']").find_element_by_class_name("c-listing-loader").find_elements_by_tag_name("section")
@@ -154,7 +154,7 @@ def scrap_just_eat(address):
     driver.close()
     driver.switch_to.window(driver.window_handles[0]) 
 
-  with open('valencia_je_'+var+'.json', 'w') as fp:
+  with open('scraping/valencia_je_'+var+'.json', 'w') as fp:
     json.dump(final, fp) 
   driver.close()
 
@@ -166,7 +166,7 @@ def scrap_uber_eats(address):
   time[0] = time[0]+"_"
   var = ""
   var = var.join(time)
-  
+
   driver = webdriver.Firefox(executable_path=r'C:\D\lookin_mealDB\geckodriver.exe') 
   driver.get("https://www.ubereats.com/")
   final = {}
@@ -266,9 +266,9 @@ def scrap_uber_eats(address):
       j += 1
       driver.close()
       driver.switch_to.window(driver.window_handles[0])
-  with open('valencia_uber_'+var+'.json', 'w') as fp:
+  with open('scraping/valencia_uber_'+var+'.json', 'w') as fp:
     json.dump(final, fp) 
-  with open('valencia_uber_'+var+'error.json', 'w') as ep:
+  with open('scraping/valencia_uber_'+var+'error.json', 'w') as ep:
     json.dump(errors, ep) 
   driver.close()
 

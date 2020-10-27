@@ -109,7 +109,7 @@ def menuFromXml(filename):
       "price" : price[0],
     })
   #print(final)
-  with open(filename[:-4] + '.json', 'w') as fp:
+  with open('nanonets/'+filename[:-4] + '.json', 'w') as fp:
     json.dump(final, fp) 
 
     

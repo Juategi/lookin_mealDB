@@ -76,12 +76,12 @@ def sumScrapFiles(file1, file2):
         user_agent='lookinmeal'
     )
     if len(scrap1) > len(scrap2):
-        for i,restaurant1  in enumerate(scrap1):
-            for j,restaurant2 in enumerate(scrap2):
+        for j,restaurant2 in enumerate(scrap2):
                 restaurant2 = scrap2[str(j)] 
                 location = geolocator.geocode(restaurant2["address"])
                 restaurant2["latitude"] = location.latitude
                 restaurant2["longitude"] = location.longitude
+        for i,restaurant1  in enumerate(scrap1): 
             print((i+1)*100/len(scrap1),"%")
             restaurant1 = scrap1[str(i)] 
             location = geolocator.geocode(restaurant1["address"])
@@ -122,12 +122,12 @@ def sumScrapFiles(file1, file2):
                             break
         final = concatenateDics(scrap1,scrap2)
     else:
-        for i,restaurant2 in enumerate(scrap2):
-            for j,restaurant1 in enumerate(scrap1):
-                restaurant1 = scrap1[str(j)] 
+        for j,restaurant1 in enumerate(scrap1):
+                restaurant1 = scrap1[str(j)]
                 location = geolocator.geocode(restaurant1["address"])
                 restaurant1["latitude"] = location.latitude
                 restaurant1["longitude"] = location.longitude
+        for i,restaurant2 in enumerate(scrap2):
             print((i+1)*100/len(scrap2),"%")
             restaurant2 = scrap2[str(i)]
             location = geolocator.geocode(restaurant2["address"])
@@ -137,7 +137,7 @@ def sumScrapFiles(file1, file2):
             longitude2 = restaurant2["longitude"]
             done = False
             for j,restaurant1 in enumerate(scrap1):
-                restaurant1 = scrap1[str(j)] 
+                restaurant1 = scrap1[str(j)]
                 latitude1 = restaurant1["latitude"]
                 longitude1 = restaurant1["longitude"]
                 if restaurant1["url"] == restaurant2["url"]:
@@ -152,7 +152,7 @@ def sumScrapFiles(file1, file2):
                                     scrap2[str(i)]["url2"] = restaurant1["url"]
                                     del scrap1[str(j)]
                                     done = True
-                                    scrap1 = reordenateDic(scrap1)
+                                    scrap1 = reordenateDic(scrap1)              
                                     break
                         else:
                             for word in clean(restaurant2['name']):
@@ -173,7 +173,6 @@ def sumScrapFiles(file1, file2):
 
 def concatenateDics(dic1, dic2):
     nextIndex = len(dic1)
-    print(dic2)
     for i,element in enumerate(dic2):
         dic1[str(nextIndex)] = dic2[str(i)]
         nextIndex += 1
@@ -182,7 +181,7 @@ def concatenateDics(dic1, dic2):
 def reordenateDic(dic):
     final={}
     for i,element in enumerate(dic):
-        final[str(i)] = element
+        final[str(i)] = dic[element]
     return final
 
 def clean(text):

@@ -163,8 +163,9 @@ def sumScrapFiles(file1, file2):
 
 def concatenateDics(dic1, dic2):
     nextIndex = len(dic1)
-    for element in dic2:
-        dic1[str(nextIndex)] = element
+    print(dic2)
+    for i,element in enumerate(dic2):
+        dic1[str(nextIndex)] = dic2[str(i)]
         nextIndex += 1
     return dic1
 
@@ -186,9 +187,14 @@ def clean(text):
                 result.append(unidecode(clean))
     return result
 
-        
+def prueba(file1,file2):
+    scrap1 = json.load(open(file1, encoding='utf-8'))
+    scrap2 = json.load(open(file2, encoding='utf-8'))
+    with open('SSSS.json', 'w') as fp:
+        json.dump(concatenateDics(scrap2,scrap1), fp) 
 
 def main(): 
   #compareScrapTripad(sys.argv[1],sys.argv[2])
   sumScrapFiles(sys.argv[1],sys.argv[2])
+  #prueba(sys.argv[1],sys.argv[2])
 main()

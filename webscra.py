@@ -43,7 +43,10 @@ def scrap_just_eat(address):
   results = results1 + results2 + results3
   print(len(results)," restaurantes")
 
+  i = 0
   for result in results:
+    print((i+1)*100/len(results),"%")
+    i += 1
     dif = False
     try:
       if "McDonald" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "KFC" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "Burger King" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title") or "Taco Bell" in result.find_element_by_css_selector("a[class='c-listing-item-link u-clearfix']").get_attribute("title"):
@@ -139,8 +142,6 @@ def scrap_just_eat(address):
             entry["description"] = ""
           entry["image"] = ""
           menu[section.get_attribute("data-test-id")].append(entry)
-
-    print(name)
     data = {}
     data["url"] = link
     data["menu"] = menu
@@ -211,8 +212,10 @@ def scrap_uber_eats(address):
         nextButton = None
 
     results = driver.find_element_by_xpath("/html/body/div/div/main/div[3]/div[2]").find_elements_by_xpath("./div")[6:]
-
+  i = 0
   for result in results:
+    print((i+1)*100/len(results),"%")
+    i += 1
     url = result.find_element_by_css_selector("a[href*='/']").get_attribute("href")  
     driver.execute_script("window.open('" +url+"','_blank')")
     sleep(2)

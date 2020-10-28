@@ -11,30 +11,55 @@ otherTypes = {'Hamburguesas':"Hamburgers", 'Estadounidense':"Hamburgers", 'Itali
 
 def uploadJson(filename):
     data = json.load(open(filename, encoding='utf-8'))
-    restaurant = data[str(1)]
-    aux = []
-    print(restaurant["cuisine"])
+    restaurant = data[str(158)]
+    types = []
     if "id" not in restaurant:
         for cuisine in restaurant["cuisine"]:
             if cuisine.strip() in otherTypes:
-                aux.append(otherTypes[cuisine.strip()])
+                types.append(otherTypes[cuisine.strip()])
     else:
         for cuisine in restaurant["cuisine"]:
             if cuisine.strip() in acceptedTypes:
-                aux.append(cuisine)
-    print(aux)
+                types.append(cuisine)
+        id = restaurant['id']
+        name = restaurant['name']
+        try:
+            phone = restaurant['phone']
+        except:
+            phone = ""
+        address = restaurant['address']
+        try:
+            email = restaurant['email']
+        except:
+            email = ""
+        country = restaurant['address'].split(" ")[-1]
+        city = restaurant['address'].split(" ")[-2]
+        latitude = restaurant['latitude']
+        longitude = restaurant['longitude']
+        try:
+            website = restaurant['website']
+        except:
+            website = ""
+        webUrl = restaurant['webUrl']
+        images = restaurant['image']
+        menu = restaurant['menu']
+        schedule = restaurant['hours']
+        final = {}
+        for i,day in enumerate(schedule):
+            final[str(i)] = []
+            for hours in day:
+                formatedHour = int(hours["open"]/60)
+                if formatedHour >= 24:
+                    formatedHour -= 24
+                final[str(i)].append(formatedHour)
+                formatedHour = int(hours["open"]/60)
+                if formatedHour >= 24:
+                    formatedHour -= 24
+                final[str(i)].append(formatedHour)
+        print(final)
 
-def cleanTypes(filename):
-    data = json.load(open(filename, encoding='utf-8'))
-    cuisines = []
-    for i,restaurant in enumerate(data):
-        restaurant = data[str(i)]
-        for cuisine in restaurant["types"]:
-            if cuisine not in cuisines:
-                cuisines.append(cuisine)
-    print(cuisines)
+        {"1":[13,16,20,23],"2":[13,16,20,23],"3":[13,16,20,23],"4":[13,16,20,23],"5":[13,16,20,23],"6":[13,16,20,23],"0":[13,16]}
     
 def main(): 
   uploadJson(sys.argv[1])
-  #cleanTypes(sys.argv[1])
 main()

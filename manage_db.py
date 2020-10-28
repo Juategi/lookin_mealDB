@@ -17,32 +17,36 @@ def uploadJson(filename):
         for cuisine in restaurant["cuisine"]:
             if cuisine.strip() in otherTypes:
                 types.append(otherTypes[cuisine.strip()])
+        taid = ""
+        phone = ""
+        email = ""
+        website = ""
+        webUrl = ""
+        country = ""
+        city = ""
+        final = {}
+        address = restaurant['address']
     else:
         for cuisine in restaurant["cuisine"]:
             if cuisine.strip() in acceptedTypes:
                 types.append(cuisine)
-        id = restaurant['id']
-        name = restaurant['name']
+        taid = restaurant['id']
         try:
             phone = restaurant['phone']
         except:
             phone = ""
-        address = restaurant['address']
         try:
             email = restaurant['email']
         except:
             email = ""
-        country = restaurant['address'].split(" ")[-1]
-        city = restaurant['address'].split(" ")[-2]
-        latitude = restaurant['latitude']
-        longitude = restaurant['longitude']
         try:
             website = restaurant['website']
         except:
             website = ""
         webUrl = restaurant['webUrl']
-        images = restaurant['image']
-        menu = restaurant['menu']
+        address = restaurant['address']
+        country = restaurant['address'].split(" ")[-1]
+        city = restaurant['address'].split(" ")[-2]
         schedule = restaurant['hours']
         final = {}
         for i,day in enumerate(schedule):
@@ -57,8 +61,45 @@ def uploadJson(filename):
                     formatedHour -= 24
                 final[str(i)].append(formatedHour)
         print(final)
-
-        {"1":[13,16,20,23],"2":[13,16,20,23],"3":[13,16,20,23],"4":[13,16,20,23],"5":[13,16,20,23],"6":[13,16,20,23],"0":[13,16]}
+    name = restaurant['name']
+    images = restaurant['image']
+    latitude = restaurant['latitude']
+    longitude = restaurant['longitude']
+    currency = "€"
+    uber = ""
+    justeat = ""
+    menu = restaurant['menu']
+    if "uber" in restaurant['scrap']:
+        uber = restaurant['scrap']
+    elif "just-eat" in restaurant['scrap']:
+        justeat = restaurant['scrap']
+    try:
+        if "uber" in restaurant['scrap2']:
+            uber = restaurant['scrap2']
+        elif "just-eat" in restaurant['scrap2']:
+            justeat = restaurant['scrap2']
+    except:
+        print("")
+    delivery = ["",uber,justeat,""]
+    body = {
+        "taid": taid,
+        "name": name,
+        "phone": phone,
+        "website": website,
+        "webUrl": webUrl,
+        "address": address,
+        "email": email,
+        "city": city.strip().toUpperCase(),
+        "country": country.strip(),
+        "latitude": latitude,
+        "longitude": longitude,
+        "rating": 0.0,
+        "numrevta": 0,
+        "images": str(image).replace("[", "{").replace("]", "}")
+        "types": str(types).replace("[", "{").replace("]", "}"),
+        "schedule": json.encode(schedule)
+        "delivery": str(delivery).replace("[", "{").replace("]", "}")
+	}
     
 def main(): 
   uploadJson(sys.argv[1])

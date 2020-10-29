@@ -4,6 +4,10 @@ import re
 import json
 import requests
 
+
+ip = "http://37.133.2.195:4000"
+
+
 acceptedTypes = [ "Cafe",  "African",  "American",  "Argentinean",  "Asian",  "Bar",  "Barbeque",  "Bistro",  "Brazilian",  "British",  "Canadian",  "Chinese",  "South American",  "Contemporary", "Dessert",  "English",  "French",  "Fusion",  "German", "Gourmet",  "Greek",  "Grill",  "Hamburgers",  "Hawaiian",  "Healthy",  "Indian",  "Indonesian",  "Italian",  "Korean",  "Lebanese",  "Mediterranean",  "Mexican",  "Organic",  "Pizza",  "Pub", "Seafood",  "Street Food",  "Sushi",  "Tapas",  "Thai",  "Turkish",  "Vegan Options",  "Vegetarian Friendly",  "Wine Bar"]
 
  
@@ -11,13 +15,13 @@ otherTypes = {'Hamburguesas':"Hamburgers", 'Estadounidense':"Hamburgers", 'Itali
 
 def uploadJson(filename):
     data = json.load(open(filename, encoding='utf-8'))
-    restaurant = data[str(158)]
+    restaurant = data[str(151)]
     types = []
     if "id" not in restaurant:
         for cuisine in restaurant["cuisine"]:
             if cuisine.strip() in otherTypes:
                 types.append(otherTypes[cuisine.strip()])
-        taid = ""
+        taid = -1
         phone = ""
         email = ""
         website = ""
@@ -60,7 +64,6 @@ def uploadJson(filename):
                 if formatedHour >= 24:
                     formatedHour -= 24
                 final[str(i)].append(formatedHour)
-        print(final)
     name = restaurant['name']
     images = restaurant['image']
     latitude = restaurant['latitude']
@@ -89,18 +92,53 @@ def uploadJson(filename):
         "webUrl": webUrl,
         "address": address,
         "email": email,
-        "city": city.strip().toUpperCase(),
+        "city": city.strip().upper(),
         "country": country.strip(),
         "latitude": latitude,
         "longitude": longitude,
         "rating": 0.0,
         "numrevta": 0,
-        "images": str(image).replace("[", "{").replace("]", "}")
+        "images": str(images).replace("[", "{").replace("]", "}"),
         "types": str(types).replace("[", "{").replace("]", "}"),
-        "schedule": json.encode(schedule)
+        "schedule": str(final).replace("'", "\""),
         "delivery": str(delivery).replace("[", "{").replace("]", "}")
 	}
     
+    response = requests.request("POST",ip + "/restaurants", data = body)
+    restaurant_id = json.loads(response.text)[0]["restaurant_id"]
+    print(restaurant_id)
+
+    sections = []
+    finalMenu = []
+    i = 0
+    for section in menu:
+        sections.append(section)
+        for element in menu[section]:
+            entry = {
+                "restaurant_id": restaurant_id, 
+                "name" : element["name"],
+                "section" : section,
+                "price" : element["price"], #comprobar que sea numero
+                "image" : element["image"],
+                "pos" : str(i),
+                "description" : element["description"],
+                "allergens" : str({})
+            }
+            i += 1
+            finalMenu.append(entry)
+            print(entry)
+
+    response = requests.request("PUT", ip + "/sections", data =  {
+        "restaurant_id": restaurant_id, 
+        "sections":str(sections).replace("[", "").replace("]", "")
+    })
+    print(response.text)
+    for entry in finalMenu:
+        response = requests.request("POST", ip + "/menus", data = str(entry).replace("'", "\""))
+        print(response.text)
+        
+
+
 def main(): 
   uploadJson(sys.argv[1])
 main()

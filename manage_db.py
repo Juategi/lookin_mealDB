@@ -15,7 +15,7 @@ otherTypes = {'Hamburguesas':"Hamburgers", 'Estadounidense':"Hamburgers", 'Itali
 
 def uploadJson(filename):
     data = json.load(open(filename, encoding='utf-8'))
-    restaurant = data[str(143)]
+    restaurant = data[str(331)]
     types = []
     if "id" not in restaurant:
         for cuisine in restaurant["cuisine"]:
@@ -146,7 +146,7 @@ def uploadJson(filename):
     })
     print(response.text)
     for entry in finalMenu:
-        response = requests.request("POST", ip + "/menus", data = str(entry).replace("'", "\""))
+        response = requests.request("POST", ip + "/menus", data = str(entry).replace("'", "\"").encode('utf-8')) #no se envia bien
         print(response.text)
         
 

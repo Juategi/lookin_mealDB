@@ -15,7 +15,7 @@ otherTypes = {'Hamburguesas':"Hamburgers", 'Estadounidense':"Hamburgers", 'Itali
 
 def uploadJson(filename):
     data = json.load(open(filename, encoding='utf-8'))
-    restaurant = data[str(151)]
+    restaurant = data[str(143)]
     types = []
     if "id" not in restaurant:
         for cuisine in restaurant["cuisine"]:
@@ -114,11 +114,24 @@ def uploadJson(filename):
     for section in menu:
         sections.append(section)
         for element in menu[section]:
+            priceA = re.findall("\d+\,\d+", element["price"])
+            if priceA == []:
+                priceA = re.findall("\d+\.\d+", element["price"])
+                if priceA == []:
+                    priceA = re.findall("\d+", element["price"])
+                    if priceA == []:
+                        price = 0.0
+                    else:
+                        price = priceA[0]
+                else:
+                    price = priceA[0]
+            else:
+                price = priceA[0]
             entry = {
-                "restaurant_id": restaurant_id, 
+                "restaurant_id": str(restaurant_id), 
                 "name" : element["name"],
                 "section" : section,
-                "price" : element["price"], #comprobar que sea numero
+                "price" : price,
                 "image" : element["image"],
                 "pos" : str(i),
                 "description" : element["description"],
@@ -126,7 +139,6 @@ def uploadJson(filename):
             }
             i += 1
             finalMenu.append(entry)
-            print(entry)
 
     response = requests.request("PUT", ip + "/sections", data =  {
         "restaurant_id": restaurant_id, 

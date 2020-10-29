@@ -106,47 +106,48 @@ def uploadJson(filename,numb):
     
     response = requests.request("POST",ip + "/restaurants", data = body)
     restaurant_id = json.loads(response.text)[0]["restaurant_id"]
-
-    sections = []
-    finalMenu = []
-    i = 0
-    for section in menu:
-        sections.append(section)
-        for element in menu[section]:
-            priceA = re.findall("\d+\,\d+", element["price"])
-            if priceA == []:
-                priceA = re.findall("\d+\.\d+", element["price"])
+    
+    if "menu" in restaurant:
+        sections = []
+        finalMenu = []
+        i = 0
+        for section in menu:
+            sections.append(section)
+            for element in menu[section]:
+                priceA = re.findall("\d+\,\d+", element["price"])
                 if priceA == []:
-                    priceA = re.findall("\d+", element["price"])
+                    priceA = re.findall("\d+\.\d+", element["price"])
                     if priceA == []:
-                        price = 0.0
+                        priceA = re.findall("\d+", element["price"])
+                        if priceA == []:
+                            price = 0.0
+                        else:
+                            price = priceA[0]
                     else:
                         price = priceA[0]
                 else:
                     price = priceA[0]
-            else:
-                price = priceA[0]
-            entry = {
-                "restaurant_id": str(restaurant_id), 
-                "name" : element["name"],
-                "section" : section,
-                "price" : price.replace(",", "."),
-                "image" : element["image"],
-                "pos" : str(i),
-                "description" : element["description"],
-                "allergens" : str({})
-            }
-            i += 1
-            finalMenu.append(entry)
+                entry = {
+                    "restaurant_id": str(restaurant_id), 
+                    "name" : element["name"],
+                    "section" : section,
+                    "price" : price.replace(",", "."),
+                    "image" : element["image"],
+                    "pos" : str(i),
+                    "description" : element["description"],
+                    "allergens" : str({})
+                }
+                i += 1
+                finalMenu.append(entry)
 
-    response = requests.request("PUT", ip + "/sections", data =  {
-        "restaurant_id": restaurant_id, 
-        "sections":str(sections).replace("[", "").replace("]", "")
-    })
-    print(response.text)
-    for entry in finalMenu:
-        response = requests.request("POST", ip + "/menus", data = entry) #no se envia bien
+        response = requests.request("PUT", ip + "/sections", data =  {
+            "restaurant_id": restaurant_id, 
+            "sections":str(sections).replace("[", "").replace("]", "")
+        })
         print(response.text)
+        for entry in finalMenu:
+            response = requests.request("POST", ip + "/menus", data = entry) #no se envia bien
+            print(response.text)
         
 
 

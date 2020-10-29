@@ -33,7 +33,7 @@ def uploadJson(filename):
             final = {}
             address = restaurant['address']
         elif restaurant['id'] not in ids:
-            ids.append(restaurant['id'])
+            ids.append(restaurant['id'].strip())
             for cuisine in restaurant["cuisine"]:
                 if cuisine.strip() in acceptedTypes:
                     types.append(cuisine)
@@ -67,6 +67,8 @@ def uploadJson(filename):
                     if formatedHour >= 24:
                         formatedHour -= 24
                     final[str(i)].append(formatedHour)
+        else:
+            continue
         name = restaurant['name']
         images = restaurant['image']
         latitude = restaurant['latitude']

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<annotation>
+  <filename>https://nnts.imgix.net/uploadedfiles/92368006-2d25-4b9e-a188-17c5b837b0a2/PredictionImages/1162901735.jpeg?expires=1635183742&amp;or=0&amp;s=264a7983796aca6b196ee9624966a299</filename>
+  <object>
+    <name>price</name>
+    <bndbox>
+      <xmin>790</xmin>
+      <ymin>738</ymin>
+      <xmax>849</xmax>
+      <ymax>783</ymax>
+    </bndbox>
+    <ocr_text>18</ocr_text>
+    <score>0.51660377</score>
+  </object>
+  <object>
+    <name>price</name>
+    <bndbox>
+      <xmin>795</xmin>
+      <ymin>1735</ymin>
+      <xmax>908</xmax>
+      <ymax>1780</ymax>
+    </bndbox>
+    <ocr_text>20.0</ocr_text>
+    <score>0.6142185</score>
+  </object>
+  <object>
+    <name>category</name>
+    <bndbox>
+      <xmin>240</xmin>
+      <ymin>1006</ymin>
+      <xmax>1341</xmax>
+      <ymax>1051</ymax>
+    </bndbox>
+    <ocr_text>Nombre del local: Fusión Kebab &amp; Pizza</ocr_text>
+    <score>0.6970347</score>
+  </object>
+  <object>
+    <name>name</name>
+    <bndbox>
+      <xmin>457</xmin>
+      <ymin>1735</ymin>
+      <xmax>570</xmax>
+      <ymax>1779</ymax>
+    </bndbox>
+    <ocr_text>10%</ocr_text>
+    <score>0.6069289</score>
+  </object>
+</annotation>

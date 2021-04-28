@@ -5,7 +5,7 @@ import json
 import requests
 
 
-ip = "http://37.133.2.195:4000"
+ip = "http://37.133.134.99:4000"
 
 
 acceptedTypes = ["African", "American", "Argentinean", "Asian", "Bar", "Barbeque", "Bistro", "Brazilian", "Cafe", "Canadian", "Chinese", "Dessert", "English", "French", "Fusion", "German", "Greek", "Grill", "Gourmet", "Hamburgers", "Hawaiian", "Healthy", "Indian", "Indonesian", "Italian", "Japanese", "Korean", "Lebanese", "Mexican", "Morocco", "Organic", "Pizza", "Pub", "Seafood", "South American", "Spanish", "Street Food", "Sushi", "Tapas", "Thai", "Turkish", "Vegan Options", "Vegetarian Friendly", "Wine Bar"]

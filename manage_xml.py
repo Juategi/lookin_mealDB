@@ -10,24 +10,6 @@ from xmljson import badgerfish as bf
 from xml.etree.ElementTree import fromstring
 import xml.etree.ElementTree as ET
 
-def uploadNanonets(filename):
-  url = 'https://app.nanonets.com/api/v2/OCR/Model/92368006-2d25-4b9e-a188-17c5b837b0a2/LabelUrls/'
-
-  headers = {
-      'accept': 'application/x-www-form-urlencoded'
-  }
-
-  data = {'urls' : [filename]}
-
-  response = requests.request('POST', url, headers=headers, auth=requests.auth.HTTPBasicAuth('1Np9aBp8m9j8WCnN6reOjZTpaRD96eF-', ''), data=data)
-  
-  result = json.loads(response.text)
-  img = result["result"][0]["input"]
-  menu = result["result"][0]["prediction"]
-  print(menu)
-  print(img)
-                
-
 def xmlJson(filename):
   parser = ET.XMLParser(encoding="utf-8")
   xml = ET.parse(filename, parser=parser).getroot()
@@ -79,6 +61,8 @@ def menuFromXml(filename):
             closest = section
         if int(section["coordinates"][1]) > int(closest["coordinates"][1]) and isCloseX(validSections,entry,section): 
             closest = section
+      if closest == None:
+        closest = sections[0]
       entry["section"] = closest["name"]
    
     if len(prices) == 0:
@@ -92,7 +76,10 @@ def menuFromXml(filename):
             closestPrice = price
           elif int(price["coordinates"][0]) < (int(closestPrice["coordinates"][0])+PRICE_X_threshold) and int(price["coordinates"][0]) - int(closestPrice["coordinates"][0]) < (abs(int(closestPrice["coordinates"][0])-int(closestPrice["coordinates"][2]))) and abs((int(price["coordinates"][3]) + int(price["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2) < abs((int(closestPrice["coordinates"][3]) + int(closestPrice["coordinates"][1]))/2 - (int(entry["coordinates"][3]) + int(entry["coordinates"][1]))/2):
             closestPrice = price
-      entry["price"] = closestPrice["name"]
+      if closestPrice == None:
+        entry["price"] = "0"
+      else:
+        entry["price"] = closestPrice["name"]
   final = {}
   for section in sections:
     final[section["name"]] = []
@@ -109,12 +96,8 @@ def menuFromXml(filename):
       "price" : price[0],
     })
   #print(final)
-  with open('nanonets/'+filename[:-4] + '.json', 'w') as fp:
-    json.dump(final, fp) 
+  #with open(filename[:-4] + '.json', 'w') as fp:
+    #json.dump(final, fp) 
+  return final
 
-    
-def main(): 
-  #nanonets(sys.argv[1])
-  menuFromXml(sys.argv[1])
-main()
 
